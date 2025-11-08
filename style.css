@@ -1,0 +1,290 @@
+:root {
+    font-size: 62.5%;
+    --font-color: black;
+    --font-color-2: goldenrod;
+    --background-color-1: white; 
+    --background-color-2: #a8e4a0;
+    --background-color-3: beige;
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Header + Navigation */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--background-color-1);
+    width: 100%;
+    padding: 0 7rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.logo img {
+    max-height: 18rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    font-size: 2.5rem;
+    margin: 0 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 2.5rem;
+    margin: 0 1.5rem;
+}
+
+.navbar a:hover {
+    color: var(--font-color-2)
+}
+
+/*Startseite*/
+
+body {
+    background-color: var(--background-color-2);
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+/* Muss an anderer Stelle stehen */
+.body-beige{
+    background-color: var(--background-color-3)
+}
+
+.wrapper-welcome {
+    padding: 4rem;
+}
+
+.big-image {
+    background-image: url(./bilder/Alte-Schule-Hausansicht-01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.einleitungstext {
+    font-size: 2.5rem;
+    background: var(--background-color-3);
+    padding: 4rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.gallery img {
+    height: 400px;
+    flex: 0 0;
+    
+}
+
+/*Räume mieten*/
+
+.big-image-raeume {
+    background-image: url(../bilder/101-Lonetal-05.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p, li {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 800px;
+    background-color: var(--background-color-3);
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Vergrößerung um 5% */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Schatten verstärken */
+}
+
+.preisübersicht {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 2px solid var(--font-color);
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid var(--font-color);
+}
+
+/*Über uns*/
+/*Main mit großem Bild und Text-Spalten*/
+
+.bild-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.column-text-container{
+    display: flex;
+}
+
+.geschichte{
+    width: 60%;
+    padding: 30px;
+    background-color: var(--background-color-1);
+}
+
+.kontakt-spalte{
+    width: 40%;
+    background-color: var(--background-color-2);
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--background-color-1);
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    position: relative; /*hier muss noch etwas anderes her*/
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/*hier noch für den Footer checken
+
+html, body {
+    height: 100%;          /* Body auf gesamte Fensterhöhe */
+    /*margin: 0;            /* Kein Standardabstand */
+/*}
+
+body {
+    display: flex;
+    flex-direction: column; /* Elemente untereinander */
+    /*min-height: 100vh;      /* mindestens Viewport-Höhe */
+/*}
+
+main {
+    flex: 1;                /* Füllt den restlichen Platz */
+/*}
+
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 20px;
+}*/
+
+.footer-left p,
+.footer-right li {
+    font-size: 20px;
+}
+
+.footer-right li {
+    display: inline;
+    margin: 10px;
+    color: var(--font-color);
+}
+
+.footer-right a:hover {
+    color: var(--font-color-2);
+}
+
+/* Mobile Layout */
+
+@media screen and (max-width: 768px) {
+
+    
+main {
+    flex: 1;
+}
+
+}
+
+/* Tablet Layout */
+@media (max-width: 1024px) {
+  /* body {
+    font-size: 18px;
+    padding: 30px;
+  } */
+}

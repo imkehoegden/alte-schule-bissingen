@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kreativhaus Alten Schule Bissingen</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="wrapper-welcome">
+        <h1>
+            Willkommen im Kreativhaus Alte Schule Bissingen o. L.!
+        </h1>
+    </div>
+
+    <div class="big-image"></div>
+
+    <main>
+
+        <section>
+
+
+            <p class="einleitungstext">
+                Hier finden Kreativschaffende flexible Arbeitsräume zur monatlichen Miete – ideal für Kunsthandwerk,
+                ganzheitliche Körperarbeit oder konzentriertes Arbeiten im eigenen Workspace. Zusätzlich steht ein
+                großzügiger Veranstaltungsraum zur Verfügung, der stunden- oder tageweise gebucht werden kann –
+                perfekt
+                für Workshops, Events oder die nächste Familienfeier.
+            </p>
+
+        </section>
+
+        <div class="gallery">
+
+            <img src="./bilder/402-Vogelherdhöhle-01.jpg" alt="Yogaraum im Dachgeschoss">
+            <img src="./bilder/101-Lonetal-05.jpg"
+                alt="Veranstaltungsraum für Konferenzen und Familienfeiern im Erdgeschoss">
+            <img src="./bilder/209-Arbeitsraum-02.jpg" alt="Küche im Erdgeschoss">
+            <img src="./bilder/303-Steinerne-Jungfrauen-06.jpg" alt="">
+            <img src="./bilder/Eingangsbereich-302-und-301-1.jpg"
+                alt="Eingangsbereich im 3. OG vor den Räumen 3.02 und 3.01-1">
+            <img src="./bilder/Küche-EG-01.jpg" alt="Küche im Erdgeschoss">
+
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+
+        fetch('./includes/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('./includes/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+    </script>
+
+</body>
+
+</html>
