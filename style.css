@@ -669,10 +669,17 @@ footer {
     font-size: var(--font-size-nav-mobile);
   }
 
+  /* Inhaltselemente breiter machen */
+  /*.wrapper-welcome,
+  h1 {
+    width: var(--content-width-mobile);
+  }*/
+
   /* Überschriften */
 
   h1 {
     font-size: var(--font-size-h1-mobile);
+    width: var(--content-width-mobile);
   }
 
   h2 {
