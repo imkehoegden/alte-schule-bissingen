@@ -557,7 +557,8 @@ footer {
   }
 
   p,
-  li {
+  li,
+  .einleitungstext {
     padding: 1rem;
     font-size: var(--font-size-p-mobile);
   }
