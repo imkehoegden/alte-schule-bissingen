@@ -407,6 +407,46 @@ td {
   padding-bottom: 4rem;
 }
 
+/* Events */
+
+.wrapper-events-intro {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.wrapper-upcoming-events {
+  background-color: var(--background-color-3);
+}
+
+.upcoming-events,
+.past-events {
+  width: var(--content-width);
+  margin: 0 auto;
+  font-size: var(--font-size-p);
+  padding-bottom: 4rem;
+}
+
+.upcoming-events img,
+.past-events img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.upcoming-events a,
+.past-events a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.upcoming-events a:hover,
+.past-events a:hover {
+  color: var(--font-color-2);
+}
+
 /* Impressum + Datenschutz */
 
 .body-beige {
