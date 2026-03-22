@@ -144,15 +144,15 @@ header {
 main {
   flex: 1;
 }
-
+/* 
 .wrapper-tagderoffenentuer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: var(--content-width);
   margin: 0 auto;
-}
-
+} */
+/* 
 .tagderoffenentuer-img-wrapper {
   margin: 2rem;
   padding: 0;
@@ -187,7 +187,7 @@ main {
 
 .tagderoffenentuer a:hover {
   color: var(--font-color-2);
-}
+} */
 
 .wrapper-einleitungstext {
   background-color: var(--background-color-3);
@@ -273,6 +273,34 @@ main {
   cursor: pointer;
   transform: scale(1.05); /* Vergrößerung um 5% */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Schatten verstärken */
+}
+
+.google-kalender {
+  border: none;
+  width: 100%;
+  max-width: 870px;
+  height: 600px;
+  padding-bottom: 4rem;
+}
+
+.calendar-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--font-color-2);
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: var(--font-size-p);
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.calendar-btn:hover {
+  color: var(--background-color-1);
+}
+
+#calendar {
+  padding-bottom: 4rem;
 }
 
 .preisübersicht-einleitung {
@@ -579,7 +607,7 @@ footer {
     display: none;
   }
 
-  /* Tag der offenen Tür */
+  /* Tag der offenen Tür
   .wrapper-tagderoffenentuer {
     flex-direction: column;
     width: var(--content-width-mobile);
@@ -600,7 +628,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 0;
-  }
+  } */
 
   /* Inhaltselemente bei kleinen Bildschirmen breiter machen */
   h1,
@@ -666,14 +694,21 @@ footer {
     height: auto;
   }
 
+  /* Belegungsübersicht: Kalender-iframe anpassen */
+  .google-kalender {
+    width: 350px; /* Mindestbreite für Lesbarkeit */
+    height: 400px;
+  }
+
   /* Tabelle */
+
   .preisübersicht {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
   .preisübersicht table {
-    width: 380px; /* Mindestbreite für bessere Lesbarkeit */
+    width: 350px; /* Mindestbreite für bessere Lesbarkeit */
   }
 
   .preisübersicht th,
@@ -766,7 +801,7 @@ footer {
   }
 
   /* Tag der offenen Tür */
-  .wrapper-tagderoffenentuer {
+  /* .wrapper-tagderoffenentuer {
     flex-direction: column;
     width: var(--content-width-mobile);
   }
@@ -786,7 +821,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 0;
-  }
+  } */
 
   /* Inhaltselemente breiter machen */
 
@@ -820,6 +855,12 @@ footer {
 
   .einleitungstext {
     font-size: var(--font-size-p-mobile);
+  }
+
+  /* Belegungsübersicht: Kalender-iframe anpassen */
+  .google-kalender {
+    width: 760px; /* Mindestbreite für Lesbarkeit */
+    height: 400px;
   }
 
   /* Tabelle: Platz geben / scrollbar falls nötig */
