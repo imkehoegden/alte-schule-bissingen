@@ -376,7 +376,7 @@ td {
 }
 
 .wrapper-geschichte {
-  background-color: var(--background-color-2);
+  background-color: var(--background-color-3);
 }
 
 .kontakt {
@@ -402,9 +402,34 @@ td {
 }
 
 .wrapper-referenzen {
+  background-color: var(--background-color-2);
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.referenzen {
   width: var(--content-width);
   margin: 0 auto;
-  padding-bottom: 4rem;
+  font-size: var(--font-size-p);
+}
+
+.container-mieterinnen {
+  margin: 2rem auto;
+}
+
+.img-container-mieterinnen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.mieterinnen-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Events */
@@ -648,6 +673,7 @@ footer {
   }
 
   /* Tag der offenen Tür
+
   .wrapper-tagderoffenentuer {
     flex-direction: column;
     width: var(--content-width-mobile);
@@ -675,8 +701,8 @@ footer {
   .einleitungstext,
   .einleitungstext-raeume,
   .geschichte,
+  .referenzen,
   .wrapper-einleitungstext .wrapper-raeume-detail,
-  .wrapper-referenzen,
   .wrapper-impressum-datenschutz,
   .kontakt {
     width: var(--content-width-mobile);
@@ -825,6 +851,7 @@ footer {
   }
 
   /* Navigation: desktopartig anzeigen, aber kompakter */
+
   .navbar {
     display: flex;
     position: static;
@@ -868,7 +895,7 @@ footer {
   .einleitungstext,
   .einleitungstext-raeume,
   .geschichte,
-  .wrapper-referenzen,
+  .referenzen,
   .wrapper-raeume-detail {
     width: var(--content-width-mobile);
   }
