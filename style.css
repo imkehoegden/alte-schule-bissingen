@@ -303,6 +303,10 @@ main {
   padding-bottom: 4rem;
 }
 
+.wrapper-preisübersicht {
+  background-color: var(--background-color-3);
+}
+
 .preisübersicht-einleitung {
   padding-bottom: 4rem;
 }
@@ -441,6 +445,10 @@ td {
 }
 
 .wrapper-upcoming-events {
+  background-color: var(--background-color-2);
+}
+
+.wrapper-past-events {
   background-color: var(--background-color-3);
 }
 
